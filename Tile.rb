@@ -1,5 +1,5 @@
 class Tile
-  attr_accessor :bombed, :flagged, :revealed
+  attr_accessor :bomb, :flag, :reveal
 
   def initialize(bomb = false)
     @bomb = bomb
@@ -31,8 +31,4 @@ class Tile
     bomb_count = 0
     #return amount of bombs on neighboring tiles
   end
-
-  
-
-
 end
